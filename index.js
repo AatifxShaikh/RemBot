@@ -21,6 +21,12 @@ const clientId = process.env.CLIENT_ID;
 const token = process.env.TOKEN;
 const guildId = process.env.GUILD_ID;
 
+const express = require('express');
+const app = express();
+
+app.get('/health', (req, res) => res.send('Bot is running!'));
+app.listen(process.env.PORT || 3000, () => console.log('Keep-alive server started.'));
+
 
 
 
