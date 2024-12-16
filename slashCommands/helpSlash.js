@@ -22,6 +22,7 @@ module.exports = {
             { name: "/seasonal", value: "Get seasonal anime listings." },
             { name: "/upcoming", value: "Get upcoming anime releases." },
             { name: "/user", value: "View your user profile." },
+            { name: "/ping", value: "Displays ping" },
             { name: "!leaderboard", value: "Display the leaderboard of most anime watched." },
 
         );
