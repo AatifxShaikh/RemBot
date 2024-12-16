@@ -1,6 +1,10 @@
 const { SlashCommandBuilder } = require('discord.js');
 const { getTrailerSlash } = require('./slashCommands/getTrailerSlash'); // Ensure path is correct
-const { clientId, guildId, token } = require('./config.json'); // Get your client ID, guild ID, and token
+require('dotenv').config();
+
+const clientId = process.env.CLIENT_ID;
+const token = process.env.TOKEN;
+const guildId = process.env.GUILD_ID; // Get your client ID, guild ID, and token
 
 const commands = [
     new SlashCommandBuilder().setName('ping').setDescription('Replies with Pong!'),

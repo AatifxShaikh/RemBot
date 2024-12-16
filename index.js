@@ -15,7 +15,11 @@ const getSeasonalSlash = require("./slashCommands/getSeasonalSlash");
 const getUpcomingSlash = require("./slashCommands/getUpcomingSlash");
 const getuserSlash = require("./slashCommands/getuserSlash");
 const helpSlash = require("./slashCommands/helpSlash");
-const { clientId, guildId, token } = require('./config.json');
+require('dotenv').config();
+
+const clientId = process.env.CLIENT_ID;
+const token = process.env.TOKEN;
+const guildId = process.env.GUILD_ID;
 
 
 
